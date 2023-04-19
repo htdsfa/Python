@@ -20,4 +20,13 @@ from nazwaBiblioteki import * #importuje wszystkie funkcje z biblioteki
 help(funkcja) #pokazuje co robi dana funkcja
 
 
+a = input() #zapisuje dane jako ciąg znaków
+int(a) #zamienia zmienną na liczbe
+float(a) #zamienia zmienną na liczbe
 
+a = int(input("Podaj pierwszą liczbę: ")) #zamienia zmienna odrazu na liczbe
+b = int(input("Podaj pierwszą liczbę: ")) #zamienia zmienna odrazu na liczbe
+
+print("Wynki dodawania to:" + str(a+b)) #pokaze: Wynki dodawania to: np 15
+print("Wynki dodawania to:", a+b) #pokaze: Wynki dodawania to: np 15
+print("Wynki dodawania",a,"+",b, "to:", a+b) #pokaze: Wynki dodawania 5 + 10 to: np 15
