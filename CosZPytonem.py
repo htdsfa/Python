@@ -109,6 +109,7 @@ while i<3:
 
 ----------------------------------------
 
+#lista[]
 lista = ["cos"]
 lista[0] = "inne"
 print("cos" in lista) #wypisze true jesli znajduje się w liscie lub false not in działa tak samo
@@ -131,13 +132,38 @@ lista.reverse() #zmienia kolejność listy
 
 ----------------------------------------
 
+#krotka () albo bez
 #nie można jej zmieniac
 #używac wtedy jak jestes pewny ze nie bedziesz nic dodawał
 krotka = 1, 2, 3, 4, 5 #bez nawiasów lub zwykłe()
 
 ----------------------------------------
-#dictionary
+
+#dictionary{}
 słownik = {49: "jakies slowo", 50: "kolejne słowo"}
 słownik[49] #pobranie wartosci
 słownik[51]= "cos tam"          }dodaje nowa wartosc
 słownik.update({52: "takk"})    }dodaje nowa wartosc
+
+----------------------------------------
+
+#zbiory{}
+#nie pokazuje tych samych elementów i od razu ją sortuje rosnaco
+a={1, 4,30,-5,4}
+a.add(4) #dodaje element
+set(a) #zamiena liste na zbiór
+
+print(a%b) #pokazuje wspólne elementy zbiorów
+print(a|b) #pokazuje wszytkie elementy zbiorów nie sortuje nie pokazuje dwa razy tych samych elementów
+print(a-b) #pokazuje zbiór a bez b
+print(a^b) #wyklucza wspólne wartosci
+a.discard(1) #usuwa podany element
+a.issubset(b) #sprawdzanie czy a jest pod zbiorem b czyli czy ma takie same wartosci
+print("\n") #daje podwójny enter
+
+----------------------------------------
+
+for name, age, sex in lista #wypisanie wartości z listy za pomoca pętli
+for key in dictionary:
+    print(key, dictionary[key]) #wypisane wartości ze słwonika za pomoca pętli
+dictionary.items() #zamiena słownik na liste i krotki
