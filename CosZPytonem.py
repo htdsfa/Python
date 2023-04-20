@@ -87,7 +87,7 @@ print("Wynik: ",wynik)
 
 ----------------------------------------
 
-for i in range(0,4):
+for i in range(0,4): #od 0 do 4
     x = int(input("Podaj liczbe: "))
     wynik += x
 print("Wynik: ",wynik)
@@ -109,3 +109,35 @@ while i<3:
 
 ----------------------------------------
 
+lista = ["cos"]
+lista[0] = "inne"
+print("cos" in lista) #wypisze true jesli znajduje się w liscie lub false not in działa tak samo
+print([4] + lista) #dodaje na poczatek listy 4
+
+print(len(lista)) #pokazuje ilość elementów w liscie
+lista.append(4) #dodaje na koniec listy i zmienia ją
+lista.extend([4,5,6,7]) #powieksza liste
+lista.insert(1, "csotam") #dodaje element na dany indeks
+lista.index("cos") #pokaże nam na jakiej pozycji znajdzuje sie dany element
+lista.sort() #sortuje rosnąco liste
+lista.sort(reverse=True) #sortuje malejąco liste
+lista.max() #pokaże najwiekszą wartość
+lista.min() #pokazę najmniejszą wartość
+lista.count(1) #pokaże ile jest danych elementów w liscie
+lista.pop() #usuwa ostatni element
+lista.remove() #usuwa pierwszy napotkany element
+lista.clear() #czysci listę
+lista.reverse() #zmienia kolejność listy
+
+----------------------------------------
+
+#nie można jej zmieniac
+#używac wtedy jak jestes pewny ze nie bedziesz nic dodawał
+krotka = 1, 2, 3, 4, 5 #bez nawiasów lub zwykłe()
+
+----------------------------------------
+#dictionary
+słownik = {49: "jakies slowo", 50: "kolejne słowo"}
+słownik[49] #pobranie wartosci
+słownik[51]= "cos tam"          }dodaje nowa wartosc
+słownik.update({52: "takk"})    }dodaje nowa wartosc
