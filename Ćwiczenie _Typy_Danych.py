@@ -11,7 +11,6 @@ while (True):
             definicja = input("Podaj definicję ")
             defi[klucz] = definicja
             print("Dodano")
-            print(defi)
     elif (wybor == 2):
         klucz = input("Co chcesz znaleźć? ")
         if klucz in defi:
