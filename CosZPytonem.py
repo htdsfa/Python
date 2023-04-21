@@ -186,3 +186,16 @@ for item in evenNumbers: #wypisanie elementów z generatora
 
 #wyrażenie słownikowe
 namesLength = { klucz : wartosc for slownik in slowniki}
+
+----------------------------------------
+
+#funkcja
+def nazwa_funkcji(parametr):
+    print("Witaj",parametr,"co u ciebie?")
+
+nazwa_funkcji(Wojtku)
+
+def nazwa_funkcji_2(parametr1,parametr2):
+    cos cosocos
+    return parametr1+parametr2
+print(5 * nazwa_funkcji_2())
