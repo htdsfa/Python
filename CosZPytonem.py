@@ -167,3 +167,22 @@ for name, age, sex in lista #wypisanie wartości z listy za pomoca pętli
 for key in dictionary:
     print(key, dictionary[key]) #wypisane wartości ze słwonika za pomoca pętli
 dictionary.items() #zamiena słownik na liste i krotki
+
+----------------------------------------
+
+#transformacja listy
+liczby = [1,3,4,5,7]
+potegiDwójki = [element ** 2 for element in liczby]
+liczbyParzyste = [element for element in liczby if (element % 2 == 0)]
+
+----------------------------------------
+
+#generator
+evenNumbers = (element for element in range (400) if (element % 2 == 0)) #generator
+for item in evenNumbers: #wypisanie elementów z generatora
+    print(item)
+
+----------------------------------------
+
+#wyrażenie słownikowe
+namesLength = { klucz : wartosc for slownik in slowniki}
