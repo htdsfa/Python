@@ -23,3 +23,9 @@ if (choice == "/"):
     else:
         result = firstNum / secondNum
         print("Your result is", result)
+if (choice == "^"):
+    firstNum = int(input("Enter a power number: "))
+    secondNum = int(input("Enter power: "))
+    result = firstNum ** secondNum
+    print("Your result is", result)
+if (choice == "#"):
