@@ -29,3 +29,7 @@ if (choice == "^"):
     result = firstNum ** secondNum
     print("Your result is", result)
 if (choice == "#"):
+    import math
+    Num = int(input("Enter number: "))
+    result = math.sqrt(Num)
+    print("Your result is", result)
