@@ -218,3 +218,4 @@ form enum import Enum
 Menu = Enum("Menu",'cos cos cos cos')
 Menu.cos #odwołanie sie do enum
 Menu.cos.value #odwołanie sie do enum zamiast liczby
+form enum import IntEnum #nie trzeba dawac value na koncu
