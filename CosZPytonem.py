@@ -224,3 +224,9 @@ Menu = Enum("Menu", {'cos':4, 'cos':2, 'cos':67, 'cos':34}) #slownik w enum
 
 ----------------------------------------
 
+#time
+import time
+start = time.perf_counter()
+caosdjasodjas
+end = time.perf_counter()
+print(end - start) #pokazuje czas w jakim cos sie wykonało
