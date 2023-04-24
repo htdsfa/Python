@@ -142,8 +142,8 @@ krotka = 1, 2, 3, 4, 5 #bez nawiasów lub zwykłe()
 #dictionary{}
 słownik = {49: "jakies slowo", 50: "kolejne słowo"}
 słownik[49] #pobranie wartosci
-słownik[51]= "cos tam"          }dodaje nowa wartosc
-słownik.update({52: "takk"})    }dodaje nowa wartosc
+słownik[51]= "cos tam"          #dodaje nowa wartosc
+słownik.update({52: "takk"})    #dodaje nowa wartosc
 
 ----------------------------------------
 
@@ -230,3 +230,15 @@ start = time.perf_counter()
 caosdjasodjas
 end = time.perf_counter()
 print(end - start) #pokazuje czas w jakim cos sie wykonało
+
+----------------------------------------
+
+#funkcja jako argument
+
+def funkcja(func, arg):
+    func(arg)
+
+def funckja2(mes):
+    print(mes)
+
+funkcja(funckja2, wiadomosc)
