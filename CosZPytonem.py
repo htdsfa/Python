@@ -219,3 +219,8 @@ Menu = Enum("Menu",'cos cos cos cos')
 Menu.cos #odwołanie sie do enum
 Menu.cos.value #odwołanie sie do enum zamiast liczby
 form enum import IntEnum #nie trzeba dawac value na koncu
+Menu = Enum("Menu", ['cos', 'cos', 'cos', 'cos']) #lista w enum
+Menu = Enum("Menu", {'cos':4, 'cos':2, 'cos':67, 'cos':34}) #slownik w enum
+
+----------------------------------------
+
