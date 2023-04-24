@@ -199,3 +199,22 @@ def nazwa_funkcji_2(parametr1,parametr2):
     cos cosocos
     return parametr1+parametr2
 print(5 * nazwa_funkcji_2())
+
+#import własnej funkcji
+import nazwa_pliku
+
+input(""" doasdaoddadodsadoa
+das
+da
+da
+da
+da
+""")
+
+----------------------------------------
+
+#enum
+form enum import Enum
+Menu = Enum("Menu",'cos cos cos cos')
+Menu.cos #odwołanie sie do enum
+Menu.cos.value #odwołanie sie do enum zamiast liczby
