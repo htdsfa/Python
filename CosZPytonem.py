@@ -242,3 +242,7 @@ def funckja2(mes):
     print(mes)
 
 funkcja(funckja2, wiadomosc)
+
+#domyslny argument
+def costam(x, y=1):     #nie podając drugiego argumentu automatycznie poda nam 1
+    return x+y
