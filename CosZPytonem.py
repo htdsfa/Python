@@ -246,3 +246,54 @@ funkcja(funckja2, wiadomosc)
 #domyslny argument
 def costam(x, y=1):     #nie podając drugiego argumentu automatycznie poda nam 1
     return x+y
+
+----------------------------------------
+
+def add():
+    c=5 #zmienna lokalna
+    global c #pobranie zmiennej globalnej
+    return c
+
+----------------------------------------
+
+def greet(name,message, separator=" "):
+    print(message, name, sep=separator)
+
+#greet("Arek", "Witaj")
+
+greet(message="Witaj", name="Arek") #zamiana argumentu pozycyjnego na kluczowy
+
+greet(message="Witaj", name="Arek",sep=" ")#sep zamiena spacje pomiedzy argumentami na co chcemy
+
+def greet(name,message, *arg): """*arg przypisze kadzy nienazwany podany argument a **arg przyjmie nazwane
+*arg odwołanie sie - func(*arg)
+**arg odwołanie sie - print(arg.get("costam"))
+argumenty nienazwane przed argumentami nazwanymi"""
+
+----------------------------------------
+
+#obiekty immutable(niezmienne): bool, int, float, tuple, str
+#obiekty mutable(zmienne):
+
+listSample = [1, 4, 512, 24]
+
+listSample2 = listSample #mutable poniewaz zmiana w list2 zmieni list
+
+listSample2.append(465)
+
+a=4
+b=a
+b=7
+
+----------------------------------------
+
+def evilFunction(destroy):
+    destroy.clear()
+
+myList = [1,2,3,45,5,6]
+
+evilFunction(myList.copy()) #kopiuje liste płytka kopia
+
+import copy
+evilFunction(copy.deepcopy(myList)) #głeboka kopia
+----------------------------------------
