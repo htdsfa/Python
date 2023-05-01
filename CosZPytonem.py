@@ -297,3 +297,7 @@ evilFunction(myList.copy()) #kopiuje liste płytka kopia
 import copy
 evilFunction(copy.deepcopy(myList)) #głeboka kopia
 ----------------------------------------
+
+test = lambda x:x*2 #funkcja anonimowa x to argument
+#Funkcja all przyjmuje jako argument listę elementów i sprawdza, czy wszystkie z nich są prawdziwe
+#enumerate(), iterator zwraca krotki zawierające indeks i odpowiadający mu element listy iterowalnej
