@@ -296,8 +296,85 @@ evilFunction(myList.copy()) #kopiuje liste płytka kopia
 
 import copy
 evilFunction(copy.deepcopy(myList)) #głeboka kopia
+
 ----------------------------------------
 
 test = lambda x:x*2 #funkcja anonimowa x to argument
 #Funkcja all przyjmuje jako argument listę elementów i sprawdza, czy wszystkie z nich są prawdziwe
 #enumerate(), iterator zwraca krotki zawierające indeks i odpowiadający mu element listy iterowalnej
+
+----------------------------------------
+#Random
+
+import random
+uniform(1,10) #losowanie od do z wyłączeniem 10
+randrange(10) #od 0 do 9
+randrange(0,21,2) #od 0 do 20 co 2
+randint(0,4) #od 0 do 4
+print (random.random) #wywołanie
+
+----------------------------------------
+#choice
+
+import random
+random.choice #zwaraca losowy elemnt
+random.choices #zwraca listę elementów
+random.choices(lista,[10,5,3,1]'''ile razy wiecej ma byc danego element''',k=100'''ile razy ma sie odbyc losowanie''')
+random.shuffle(lista2) #przetasowuje liste
+print(lista2) #wywołanie shuffle
+
+----------------------------------------
+#losowanie unikalnych liczb
+#sample nie powatarza liczb
+def randomNumbers(amount,totalAmount):
+    print(random.sample(range(totalAmount+1),amount))
+randomNumbers(6,49)
+
+----------------------------------------
+"""
+podstawowe sposoby otwierania plików
+r - R ead (czytanie) - domyślne
+w - W rite (pisanie) - 
+a - A ppend (dopisywanie)
+
+mnogie tryby otwierania plików:
+r+ - do czytania i pisania i sprawdza czy istnieje
+
+file.read file.write
+
+w+ - do pisania i czytania
+różni sie tym, że usunie zawartość istniejącego pliku
+lub stworzy plik gdy go nie było
+
+a+ - "wieczny tryb" dopisywania i przy okazji czytania
+UWAGA! wskaźnik dopisywania jest zawsze na końcu
+jeśli plik nie istniał - stworzy go
+"""
+open("nazwa_pliku") #otwiera plik
+open("nazwa_pliku", "w") #jeślli plik istniał to go usunie jeśli nie to stworzy
+
+file = open("nazwa_pliku", "w")
+file.write("cos") #napisze w pliku
+file.close() #zamknie plik trzeba zamykac
+
+try: #próbuj robic
+    file = open("nazwa_pliku", "w")
+    file.write("cos")
+finally: #nie ważne co
+    file.close()
+
+with open("nazwa_pliku", "w") as file: #zamknie plik nie wazne co
+    file.write("cos")
+
+with open("oceany", encoding="UTF-8") as file: #czytanie pliku
+    oceany = file.read().splitlines()#zwróci jako liste
+    oceany = file.readline() #pokaże linijke
+    oceany = file.readlines()#pokaże liste ale z \n
+    for line in file:
+        print(line) #pokaże linijke po enterze
+print(file.tell()) #pokaze w którym miejscu jest wskaźnik
+print(file.seek(4)) #przesunie wskaźnik w dana pozycje i zacznie od niej
+
+with open("oceany", "a", encoding="UTF-8") as file: #dopisywanie do pliku
+    file.write("cos")
+    file.write("\ncos") #dopisze do kolejnej linijki
