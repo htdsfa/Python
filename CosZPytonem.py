@@ -378,3 +378,7 @@ print(file.seek(4)) #przesunie wskaźnik w dana pozycje i zacznie od niej
 with open("oceany", "a", encoding="UTF-8") as file: #dopisywanie do pliku
     file.write("cos")
     file.write("\ncos") #dopisze do kolejnej linijki
+
+tuple(line) # zamienia na krotke
+replace("\n", "") #zamiena enter na nic
+split(" ") #rozdziela linijke przy danym znaku
